@@ -2,7 +2,7 @@
 <html lang="fr">
 <head>
 <meta charset="UTF-8">
-<title>Centralist United States</title>
+<title>Resurgent States of America</title>
 
 <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&family=Share+Tech+Mono&display=swap" rel="stylesheet">
 
@@ -12,10 +12,10 @@ body{
 margin:0;
 padding:0;
 overflow:hidden;
-background:#000814 url("background.png") no-repeat center center fixed;
+background:#050505 url("background.png") no-repeat center center fixed;
 background-size:cover;
 font-family:'Orbitron',sans-serif;
-color:#ffffff;
+color:#d6d6d6;
 }
 
 /* SUPPRESSION VIDEO */
@@ -29,7 +29,12 @@ display:none;
 position:fixed;
 width:100%;
 height:100%;
-background:linear-gradient(120deg, rgba(0,32,91,0.6), rgba(139,0,0,0.6));
+background:
+linear-gradient(
+120deg,
+rgba(25,25,25,0.78),
+rgba(80,0,0,0.72)
+);
 z-index:-1;
 }
 
@@ -42,8 +47,8 @@ width:100%;
 height:100%;
 background:repeating-linear-gradient(
 to bottom,
-rgba(255,255,255,0.03),
-rgba(255,255,255,0.03) 1px,
+rgba(255,255,255,0.025),
+rgba(255,255,255,0.025) 1px,
 transparent 1px,
 transparent 3px
 );
@@ -69,23 +74,26 @@ text-align:center;
 #logo{
 width:140px;
 margin-bottom:15px;
-filter:drop-shadow(0 0 15px #ffffff);
+filter:drop-shadow(0 0 18px #ff3b3b);
 }
 
 /* TITLE */
 
 #title{
 font-size:55px;
-letter-spacing:5px;
-color:#ffffff;
-text-shadow:0 0 10px #1e90ff,0 0 25px #ff0000;
+letter-spacing:6px;
+color:#f0f0f0;
+text-shadow:
+0 0 12px #8b0000,
+0 0 25px #ff0000,
+0 0 40px #ff3b3b;
 }
 
 /* SUBTITLE */
 
 #subtitle{
 font-size:16px;
-color:#cfd8ff;
+color:#c4b6b6;
 letter-spacing:3px;
 margin-bottom:40px;
 font-family:'Share Tech Mono', monospace;
@@ -97,15 +105,15 @@ font-family:'Share Tech Mono', monospace;
 width:800px;
 max-width:90%;
 height:260px;
-background:rgba(0,0,0,0.75);
-border:2px solid #1e90ff;
-box-shadow:0 0 20px #1e90ff;
+background:rgba(0,0,0,0.82);
+border:2px solid #8b0000;
+box-shadow:0 0 25px #8b0000;
 padding:20px;
 overflow:hidden;
 text-align:left;
 font-family:'Share Tech Mono', monospace;
 font-size:14px;
-color:#cfd8ff;
+color:#d8d8d8;
 }
 
 #line{
@@ -125,15 +133,20 @@ margin-top:35px;
 width:400px;
 max-width:80%;
 height:18px;
-border:1px solid #ffffff;
-background:rgba(0,0,0,0.6);
+border:1px solid #6e0000;
+background:rgba(0,0,0,0.7);
 }
 
 #progress{
 height:100%;
 width:0%;
-background:linear-gradient(90deg,#1e90ff,#ffffff,#ff0000);
-box-shadow:0 0 10px #ffffff;
+background:linear-gradient(
+90deg,
+#300000,
+#8b0000,
+#ff3b3b
+);
+box-shadow:0 0 12px #ff0000;
 transition:width 0.3s;
 }
 
@@ -143,7 +156,7 @@ transition:width 0.3s;
 margin-top:12px;
 font-size:14px;
 letter-spacing:2px;
-color:#ffffff;
+color:#d0d0d0;
 font-family:'Share Tech Mono', monospace;
 }
 
@@ -155,9 +168,9 @@ bottom:20px;
 left:30px;
 font-size:12px;
 font-family:'Share Tech Mono', monospace;
-color:#ffffff;
+color:#b8b8b8;
 text-align:left;
-opacity:0.7;
+opacity:0.75;
 }
 
 </style>
@@ -165,21 +178,16 @@ opacity:0.7;
 
 <body>
 
-<!-- VIDEO SUPPRIMÉ -->
-<!-- <video id="background-video" autoplay muted loop>
-<source src="loading.webm" type="video/webm">
-</video> -->
-
 <div id="overlay"></div>
 
 <div id="main">
 
 <img id="logo" src="logo.png">
 
-<div id="title">CENTRALIST UNITED STATES</div>
+<div id="title">RESURGENT STATES OF AMERICA</div>
 
 <div id="subtitle">
-https://discord.gg/bZJ7KGuMZd • National Unity • Absolute Order
+discord.gg/bZJ7KGuMZd • Rebuild Through Ashes • The Old World Is Dead
 </div>
 
 <div id="terminal">
@@ -191,14 +199,14 @@ https://discord.gg/bZJ7KGuMZd • National Unity • Absolute Order
 <div id="progress"></div>
 </div>
 
-<div id="status">Initialisation du système...</div>
+<div id="status">Réactivation du réseau survivant...</div>
 
 </div>
 
 <div id="corner">
-CLASSIFICATION : TOP SECRET<br>
-ACCESS LEVEL : ALPHA<br>
-CENTRALIST NETWORK
+CLASSIFICATION : OMEGA BLACK<br>
+SURVIVOR ACCESS ONLY<br>
+R.S.A RECLAMATION NETWORK
 </div>
 
 <audio id="music" loop>
@@ -215,16 +223,16 @@ let percent = 0
 
 const messages = [
 
-"Connexion au réseau central...",
-"Authentification des citoyens...",
-"Chargement des bases...",
-"Synchronisation des forces armées...",
-"Activation des protocoles de sécurité...",
-"Chargement des unités...",
-"Synchronisation des données nationales...",
-"Stabilisation du système...",
-"Connexion sécurisée...",
-"Bienvenue, citoyen."
+"Connexion aux relais abandonnés...",
+"Recherche des colonies survivantes...",
+"Authentification des citoyens rescapés...",
+"Synchronisation des bunkers fédéraux...",
+"Réactivation des défenses nationales...",
+"Chargement des archives pré-effondrement...",
+"Déploiement des unités de récupération...",
+"Stabilisation des zones sécurisées...",
+"Restauration des communications continentales...",
+"Bienvenue dans les Resurgent States."
 
 ]
 
@@ -251,7 +259,7 @@ i++
 setTimeout(load,800)
 
 }else{
-status.innerText = "Connexion établie"
+status.innerText = "Connexion établie au réseau RSA"
 }
 
 }
